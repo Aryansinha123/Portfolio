@@ -15,6 +15,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Aryan Sinha | Portfolio",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+  },
   description:
     "Building Intelligent, Scalable & Beautiful Systems — Full-stack developer & data science student at VIT Vellore. Portfolio showcasing projects, skills, and experience.",
   keywords: [

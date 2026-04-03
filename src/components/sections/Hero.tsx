@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import MagneticButton from "@/components/ui/MagneticButton";
@@ -82,6 +83,45 @@ export default function Hero() {
             transform: `perspective(1000px) rotateX(${normalized.y * -2}deg) rotateY(${normalized.x * 2}deg)`,
           }}
         >
+          {/* Profile */}
+          <motion.div
+            className="mx-auto mb-8 flex justify-center"
+            initial={{ opacity: 0, scale: 0.88 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.45, duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <motion.div
+              className="relative rounded-full p-[2px] animate-border-glow will-change-transform"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(0,245,255,0.55), rgba(59,130,246,0.35), rgba(168,85,247,0.5))",
+                boxShadow:
+                  "0 0 28px rgba(0, 245, 255, 0.2), 0 0 56px rgba(168, 85, 247, 0.1), inset 0 1px 0 rgba(255,255,255,0.12)",
+              }}
+              animate={{ y: [0, -5, 0] }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1.2,
+              }}
+            >
+              <div
+                className="relative h-32 w-32 sm:h-36 sm:w-36 md:h-40 md:w-40 rounded-full overflow-hidden bg-space-900 ring-1 ring-white/10
+                shadow-[inset_0_0_24px_rgba(2,6,23,0.35)]"
+              >
+                <Image
+                  src="/profile.png"
+                  alt="Aryan Sinha — portrait"
+                  fill
+                  className="object-cover object-[center_25%]"
+                  sizes="(max-width: 640px) 128px, (max-width: 768px) 144px, 160px"
+                  priority
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+
           {/* Greeting */}
           <motion.p
             className="text-neon-cyan text-sm md:text-base tracking-[0.3em] uppercase mb-4 font-medium"
