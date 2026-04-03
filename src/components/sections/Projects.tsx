@@ -31,7 +31,7 @@ const projects: Project[] = [
     longDescription:
       "Built a full-stack platform using Next.js, Node.js, and MongoDB. Implemented authentication, role-based access control, and event management with a responsive Tailwind CSS interface.",
     techStack: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    github: "#",
+    github: "https://github.com/Aryansinha123/Event_Manager.git",
     live: "https://event-ease-bay.vercel.app/",
     gradient: "from-cyan-500/20 to-blue-500/20",
   },
@@ -61,7 +61,7 @@ const projects: Project[] = [
     longDescription:
       "Full-stack platform using Next.js, Node.js, and MongoDB. Features JWT authentication, role-based access management, and a streamlined interface connecting donors with volunteer opportunities.",
     techStack: ["Next.js", "Node.js", "MongoDB", "JWT"],
-    github: "#",
+    github: "https://github.com/Aryansinha123/Care-Connect.git",
     live: "https://care-connect-blush.vercel.app/",
     gradient: "from-emerald-500/20 to-cyan-500/20",
   },
@@ -71,7 +71,7 @@ const projects: Project[] = [
     longDescription:
       "Developed a full-stack food delivery platform with login, menu browsing, about us, and table booking using Vue.js. Built an admin dashboard to manage orders with PHP, XAMPP (Apache), and MySQL.",
     techStack: ["Vue.js", "PHP", "MySQL", "XAMPP", "Apache"],
-    github: "#",
+    github: "https://github.com/Aryansinha123/FoodDelivery.git",
     live: "#",
     gradient: "from-amber-500/20 to-rose-500/20",
   },

@@ -133,13 +133,6 @@ export default function CustomCursor() {
 
       {/* Cursor ring */}
       <motion.div
-        style={{
-          position: "absolute",
-          x: ringX,
-          y: ringY,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
         animate={{
           width: isHovering ? 50 : 32,
           height: isHovering ? 50 : 32,
@@ -164,13 +157,6 @@ export default function CustomCursor() {
 
       {/* Cursor dot */}
       <motion.div
-        style={{
-          position: "absolute",
-          x: cursorX,
-          y: cursorY,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
         animate={{
           width: isHovering ? 8 : 5,
           height: isHovering ? 8 : 5,
