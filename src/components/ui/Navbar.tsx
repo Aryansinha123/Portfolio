@@ -52,14 +52,14 @@ export default function Navbar() {
   return (
     <motion.nav
       style={{ scale: navScale }}
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-[90] w-auto"
+      className="fixed top-4 left-1/2 -translate-x-1/2 z-[90] w-[95vw] sm:w-[90vw] md:w-auto overflow-hidden rounded-full"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
     >
       <motion.div
         style={{ opacity: navOpacity }}
-        className={`flex items-center gap-1 px-2 py-2 rounded-full transition-all duration-500
+        className={`flex items-center gap-1 md:gap-2 px-2 py-2 rounded-full transition-all duration-500 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]
           ${
             isScrolled
               ? "glass-card-strong shadow-[0_0_30px_rgba(0,245,255,0.1)]"
@@ -72,7 +72,7 @@ export default function Navbar() {
             href={link.href}
             onClick={(e) => handleClick(e, link.href)}
             data-hoverable
-            className="relative px-4 py-2 text-sm font-medium rounded-full transition-colors duration-300"
+            className="relative px-3 md:px-4 py-2 text-xs md:text-sm font-medium rounded-full transition-colors duration-300 shrink-0 whitespace-nowrap"
           >
             {activeSection === link.href.replace("#", "") && (
               <motion.div
